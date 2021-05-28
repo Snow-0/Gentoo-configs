@@ -1,0 +1,109 @@
+Syncs portage tree
+	emerge --sync
+
+checks package for vulnerbilities 
+	glsa-check -tf all 
+
+
+uninstall package (does not check for dependenecies )
+
+	emerge --unmerge --ask 
+
+
+
+perform updates 
+	perform sync 
+ 	emerge --sync	
+
+	updates packages in world and their dependencies 
+	emerge -avDuN --with-bdeps=y @world
+	emerge --ask --depclean
+
+	
+removing packages  
+
+	equery d *package*
+	emerge --ask --depclean *packages
+
+lists unused dependencies and uninstalls them
+	emerge --ask --depclean
+
+
+removes packages from @world 
+	emerge --ask --deselect *package* 
+	emerge --ask --depclean
+
+reselect package
+	emerge --ask --noreplace *package*
+
+
+
+view what source code files are deleted
+	eclean-dist -dp 
+
+this deletes the files
+	eclean-dist -d 
+
+
+
+
+check if package is installed
+
+equery list "*" | grep *package*
+
+
+view news 
+
+eselect news list 
+
+view specific news 
+
+eselect new read *number* | less 
+
+
+
+Upgrading genkernel 
+
+emerge --ask gentoo-sources
+cd /usr/src/linux
+eselect kernel list
+eselect kernel set *number* 
+genkernel --virtio all 
+emerge @module-rebuild
+
+Upgrading custom kernel 
+emerge --ask gentoo-sources
+cd /usr/src/linux
+eselect list 
+eselect kernel set *number* 
+make olddefconfig
+emerge @module-rebuild
+
+install dwm
+need the following packages to compile dwm
+
+emerge --ask x11-libs/libXft
+emerge --ask x11-libx/libXinerama 
+
+make all dwmblocks scripts executable
+chmod +x /patch/to/scripts/dwmblocks/src/*.sh
+
+
+view installed packages in world 
+cat /var/lib/portage/world 
+
+
+remove old kernels
+
+eclean-kernel -n 2 
+keeps the last 2 lastest kernel versions
+
+see what has changed
+diff .config /path/to/old/config
+
+temporary useflags 
+USE="*flags*" emerge *package*
+
+
+audio 
+https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line
