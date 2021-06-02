@@ -1,0 +1,16 @@
+# set this file as executable and move it to /lib64/elogind/system-sleep/
+# run the the script with ./20-nvidia 
+# scripted was from this bug report on comment 30 https://bugs.gentoo.org/693384
+# This prevents loginctl suspend from giving you a black screen when resuming from suspend. 
+#!/bin/sh
+case "${1-}" in
+    'pre')
+        /usr/bin/nvidia-sleep.sh suspend
+        ;;
+    'post')
+        /usr/bin/nvidia-sleep.sh resume &
+        ;;
+    *)
+        exit 1
+        ;;
+esac
