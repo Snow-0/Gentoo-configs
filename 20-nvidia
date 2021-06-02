@@ -3,6 +3,7 @@
 # run the the script with ./20-nvidia 
 # script was from this bug report on comment 30 https://bugs.gentoo.org/693384
 # This prevents loginctl suspend from giving you a black screen when resuming from suspend. 
+# press any key on the keyboard to wake up the system
 
 case "${1-}" in
     'pre')
