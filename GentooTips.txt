@@ -107,3 +107,6 @@ USE="*flags*" emerge *package*
 
 audio 
 https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line
+
+cursor themes
+https://wiki.gentoo.org/wiki/Cursor_themes
