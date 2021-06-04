@@ -110,3 +110,11 @@ https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-
 
 cursor themes
 https://wiki.gentoo.org/wiki/Cursor_themes
+
+
+check which packages need dependencies
+equery d *package* 
+
+libreoffice 
+must compile with the gtk use flag for gtk theme support 
+
