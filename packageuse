@@ -1,0 +1,9 @@
+media-sound/pulseaudio native-headset ofono-headset bluetooth
+
+dev-qt/qtsql freetds mysql oci8 odbc postgres sqlite
+
+sys-libs/gdbm berkdb
+
+app-office/libreoffice -accessability -bluetooth -coinmp -eds java -postgres base firebird
+
+x11-misc/nitrogen nls
