@@ -133,3 +133,13 @@ flaggie *package name* +/-*flag*
 
 emoji support
 emerge -a joypixels
+
+
+virt-manager libvirt connect 
+https://askubuntu.com/questions/318702/issue-with-virt-manager
+
+sudo /etc/init.d/libvirtd restart
+
+loginctl reboot 
+
+
