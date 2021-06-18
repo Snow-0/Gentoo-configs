@@ -128,4 +128,6 @@ btrfs subvol delete /path/to/snapshot
 solve startx issue 
 https://wiki.gentoo.org/wiki/D-Bus
 
+flaggie
+flaggie *package name* +/-*flag*
 
