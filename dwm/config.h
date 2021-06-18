@@ -19,7 +19,7 @@ static const int showsystray             = 1;   /* 0 means no systray */
 static int tagindicatortype              = INDICATOR_TOP_LEFT_SQUARE;
 static int tiledindicatortype            = INDICATOR_NONE;
 static int floatindicatortype            = INDICATOR_TOP_LEFT_SQUARE;
-static const char *fonts[]          = { "JetBrains Mono Nerd Font:pixelsize=14.5" };
+static const char *fonts[]          = { "Product Sans:pixelsize=14.5", "Jetbrains Mono Nerd Font:pixelsize=14" };
 static const char dmenufont[]       = {"monospace:size=11"};
 
 static char normfgcolor[]                = "#D8DEE9";
@@ -176,7 +176,7 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
+	{ "[ ]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 	{ "HHH",      gaplessgrid },
@@ -215,11 +215,10 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browser[]  = { "brave-bin", NULL };
 static const char *pavu[]     = { "pavucontrol", NULL };
 static const char *fm[]       = { "pcmanfm", NULL }; 
-static const char *appimagefolder[] = { "pcmanfm", "AppImages", NULL}; 
 
 static const char *suspend[]    = { "loginctl", "suspend", NULL };
-static const char *restart[]  = { "sudo", "reboot", NULL };
-static const char *shutdown[] = { "sudo", "shutdown", "now", NULL };
+static const char *restart[]  = { "loginctl", "reboot", NULL };
+static const char *shutdown[] = { "loginctl", "shutdown", "now", NULL };
 
 static const char *tty[] = { "pkill", "X", NULL };
 
@@ -236,7 +235,6 @@ static Key keys[] = {
 	{ MODKEY,                    	XK_f,          spawn,       	       {.v = browser } },
 	{ MODKEY|ShiftMask,             XK_p,          spawn,                  {.v = pavu    } },
 	{ MODKEY, 			XK_q,	       spawn, 		       {.v = fm      } },
-	{ MODKEY,			XK_e,	       spawn,			{.v = appimagefolder} }, 
 	// enter into tty
         { MODKEY|ShiftMask,         	XK_e,          spawn,                  {.v = tty} },
 	// Audio controls
