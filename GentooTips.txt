@@ -125,5 +125,7 @@ to delete a snapshot
 btrfs subvol delete /path/to/snapshot
 
 
+solve startx issue 
+https://wiki.gentoo.org/wiki/D-Bus
 
 
