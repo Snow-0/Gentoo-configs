@@ -131,3 +131,5 @@ https://wiki.gentoo.org/wiki/D-Bus
 flaggie
 flaggie *package name* +/-*flag*
 
+emoji support
+emerge -a joypixels
