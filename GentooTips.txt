@@ -143,6 +143,9 @@ emerge -a joypixels
 virt-manager libvirt connect 
 https://askubuntu.com/questions/318702/issue-with-virt-manager
 
+virt-manager qxl 
+compile qemu with spice flag 
+
 sudo /etc/init.d/libvirtd restart
 
 loginctl reboot 
