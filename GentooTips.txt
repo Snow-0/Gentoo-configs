@@ -145,6 +145,8 @@ https://askubuntu.com/questions/318702/issue-with-virt-manager
 
 virt-manager qxl 
 compile qemu with spice flag 
+usb error
+compile qemu with usbredir
 
 sudo /etc/init.d/libvirtd restart
 
