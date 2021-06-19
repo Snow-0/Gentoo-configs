@@ -152,4 +152,9 @@ sudo /etc/init.d/libvirtd restart
 
 loginctl reboot 
 
+unable to connect to network 
+enable realtek ethernet driver 
 
+lscpi 
+
+Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 
