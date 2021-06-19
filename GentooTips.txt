@@ -153,7 +153,7 @@ sudo /etc/init.d/libvirtd restart
 loginctl reboot 
 
 unable to connect to network 
-enable realtek ethernet driver 
+enable realtek ethernet driver in kernel
 
 lscpi 
 
