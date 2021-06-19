@@ -162,3 +162,7 @@ Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411
 
 printer 
 https://forums.gentoo.org/viewtopic-t-1095586-start-0.html
+
+
+evince pdf viewer 
+https://bugs.launchpad.net/ubuntu/+source/evince/+bug/1589156
