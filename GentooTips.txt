@@ -3,6 +3,7 @@ Syncs portage tree
 
 checks package for vulnerbilities 
 	glsa-check -tf all 
+	glsa-check -t all
 
 
 uninstall package (does not check for dependenecies )
