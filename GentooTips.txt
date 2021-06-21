@@ -171,3 +171,7 @@ https://bugs.launchpad.net/ubuntu/+source/evince/+bug/1589156
 snapper 
 delete config
 delete line in /etc/snapper/configs
+
+
+autoload gc adapter kernel module
+https://forums.gentoo.org/viewtopic-t-1137708-highlight-.html
