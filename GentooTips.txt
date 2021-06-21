@@ -175,3 +175,6 @@ delete line in /etc/snapper/configs
 
 autoload gc adapter kernel module
 https://forums.gentoo.org/viewtopic-t-1137708-highlight-.html
+
+clock
+use ntp to set the time properly
