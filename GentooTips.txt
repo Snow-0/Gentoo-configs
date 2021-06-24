@@ -84,7 +84,7 @@ install dwm
 need the following packages to compile dwm
 
 emerge --ask x11-libs/libXft
-emerge --ask x11-libx/libXinerama 
+emerge --ask x11-libs/libXinerama 
 
 make all dwmblocks scripts executable
 chmod +x /patch/to/scripts/dwmblocks/src/*.sh
