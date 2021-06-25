@@ -179,6 +179,18 @@ delete config
 delete line in /etc/snapper/configs
 
 
+umount/.snapshots/
+rm -rf /.snapshots/
+snapper root -c create-config / 
+
+vim /etc/snapper/configs/root
+add user to group 
+
+make user be able to write into .snapshots
+
+chmod a+rx /.snapshots/
+
+
 autoload gc adapter kernel module
 https://forums.gentoo.org/viewtopic-t-1137708-highlight-.html
 
