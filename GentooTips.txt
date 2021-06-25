@@ -142,7 +142,13 @@ emerge -a joypixels
 
 
 virt-manager libvirt connect 
-https://askubuntu.com/questions/318702/issue-with-virt-manager
+uncomment these lines in /etc/libvirt/libvirtd.conf
+
+auth_unix_ro = "none"
+auth_unix_rw = "none"
+unix_sock_group = "libvirt"
+unix_sock_ro_perms = "0777"
+unix_sock_rw_perms = "0770"
 
 virt-manager qxl 
 compile qemu with spice flag 
