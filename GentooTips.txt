@@ -206,4 +206,8 @@ emerge virt-manager again
 
 
 brave-bin printer
-add the cups useflag for gtk+
+add the cups use flag for gtk+
+
+bpytop
+go to options to turn off init screen
+
