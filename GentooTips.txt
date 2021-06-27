@@ -203,3 +203,7 @@ echo "Europe/Brussels" > /etc/timezone
 emerge --config sys-libs/timezone-data
 
 emerge virt-manager again
+
+
+brave-bin printer
+add the cups useflag for gtk+
