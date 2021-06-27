@@ -17,8 +17,9 @@ alias search="equery list '*' | grep "
 alias install="sudo emerge -a " 
 alias ar="cd /home/max/arch/@home/max/"
 alias sudo="doas " 
-alias xr="xrandr --output DP-2 --primary --mode 1920x1080 --rate 144 --left-of DP-4 && xrandr --output DP-4  --mode 1920x1080 --rate 144 --right-of DP-2"
+#alias xr="xrandr --output DP-2 --primary --mode 1920x1080 --rate 144 --left-of DP-4 && xrandr --output DP-4  --mode 1920x1080 --rate 144 --right-of DP-2"
 alias cworld="cat /var/lib/portage/world"
+alias e="emerge -avq " 
 
 # auto suggestion
 source ~/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
