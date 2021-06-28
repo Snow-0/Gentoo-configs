@@ -211,3 +211,6 @@ add the cups use flag for gtk+
 bpytop
 go to options to turn off init screen
 
+change vim keymap 
+install xmodmap
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
