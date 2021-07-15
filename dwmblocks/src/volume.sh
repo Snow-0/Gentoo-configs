@@ -7,7 +7,8 @@ case $BLOCK_BUTTON in
 esac
 
 
-vol="$(pactl list sinks | grep '^[[:space:]]Volume:' |     head -n $(( $SINK + 2 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')"
+#vol="$(pamixer --get-volume)"
+vol="$(pulsemixer --get-volume | awk '{print $1}')"
 
 if [[ "$vol" -gt "60" ]]; then
 	icon="  "
