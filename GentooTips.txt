@@ -214,3 +214,7 @@ go to options to turn off init screen
 change vim keymap 
 install xmodmap
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+
+set default sink to headset
+pactl set-default-sink alsa_output.usb-Kingston_HyperX_Cloud_Flight_Wireless_Headset-00.analog-stereo
